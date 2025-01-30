@@ -5,5 +5,9 @@
 ```yaml
     cd remove_following 
 ```
+```yaml
+volumes:
+  - /path/to/your/frontend:/var/www/html/
+```
 <p>create .env</p>
 <p>run this command: npm </p>

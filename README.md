@@ -1,4 +1,4 @@
-<h1>Remove following who doesn't return your follow</h1>
+#Remove following who doesn't return your follow
 <h3>How run it</h3>
 <p>install node js</p>
 <p>run this command</p>
@@ -12,6 +12,14 @@ volumes:
 ```
 <p>create .env</p>
 <p>run this command: npm </p>
+### For the `nginx` Service
+Update the volume paths to point to your frontend directory:
+```yaml
+volumes:
+  - /path/to/your/frontend:/var/www/html/
+```
+
+
 # Project Setup
 
 Follow these steps to set up the project and ensure it runs correctly:

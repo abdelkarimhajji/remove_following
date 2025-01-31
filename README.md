@@ -32,3 +32,9 @@ USER_NAME=write your username
 ```yaml
   npm install
 ```
+
+## 4. Run script
+
+```yaml
+  node followers.js
+```

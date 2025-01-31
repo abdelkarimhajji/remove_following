@@ -1,53 +1,34 @@
-#Remove following who doesn't return your follow
-<h3>How run it</h3>
-<p>install node js</p>
-<p>run this command</p>
-`cd remove_following`
-<p>create .env</p>
-<p>run this command: npm </p>
-### For the `nginx` Service
-Update the volume paths to point to your frontend directory:
-```yaml
-volumes:
-  - /path/to/your/frontend:/var/www/html/
-```
+### Remove following who doesn't return your follow
 
-
-# Project Setup
-
-Follow these steps to set up the project and ensure it runs correctly:
+Follow these steps to set up the script :
 
 ---
 
-## 1. Install Docker
-Use the `42 wizard` tool to install Docker on your system.
+## 1. Install nodeJs
 
-[Link Text](https://github.com/0xShady/42_wizzard/blob/main/42-wizzard.sh "Hover Text")
-
-## 2. Update `docker-compose.yml` File
-Modify the paths in the `docker-compose.yml` file to match your project structure:
-
-### For the `nginx` Service
-Update the volume paths to point to your frontend directory:
 ```yaml
-volumes:
-  - /path/to/your/frontend:/var/www/html/
+  sudo apt update
+  sudo apt install -y nodejs npm
 ```
 
-### For the `api` Service
-Update the volume paths to point to your backend directory:
+Check the installed version:
+
 ```yaml
-volumes:
-  - /path/to/your/backend:/api/
-```
-## 3. add `.env` file in the root of the repo
-
-## 4. Create an Application in Intra 42
-    Navigate to Settings > API > REGISER A NEW APP
-```
-Copy the UID and paste it into the .env file under CLIENT_UID.
-Copy the Secret and paste it into the .env file under CLIENT_SECRET
-Redirect Uri:  https://your-machine-ip/api/auth/callback/
+  node -v
+  npm -v
 ```
 
-## 5. run `./rebuild`
+if evrything is ok continue :
+
+## 2. Create file call .env and fill it with these
+
+```yaml
+GITHUB_ACCESS_TOKEN=write your token github you can generate it from github 
+USER_NAME=write your username
+```
+
+## 3. Install the dependencies
+
+```yaml
+  npm install
+```
